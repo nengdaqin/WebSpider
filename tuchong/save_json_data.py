@@ -16,6 +16,6 @@ headers = {
 resp = requests.get(url, headers=headers).json()
 print(resp)
 
-with open("mountain.json", "w", encoding="utf-8") as f:
+with open("../json_file/tuchong_json/mountain.json", "w", encoding="utf-8") as f:
     json.dump(resp, f, ensure_ascii=False)
 
