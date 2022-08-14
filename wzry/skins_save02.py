@@ -13,6 +13,8 @@ import urllib.parse  # quote()可以将中文转换为URL编码格式
 headers = {
     "User_Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2227.0 "
                   "Safari/537.36"}
+
+
 # 获取英雄的json数据
 def get_json_data(json_url):
     hero_json = requests.get(json_url, headers=headers).json()

@@ -37,7 +37,7 @@ heroKeywords = jsonpath.jsonpath(hero_json, "$..keywords")  # 皮肤名称
 num = 0  # 文件夹
 for i in heroId:
     # 创建文件夹
-    download_path = "D:/qnd/Pictures/lol_pic/" + hero_name[num]
+    download_path = "./" + hero_name[num]
     if not os.path.exists(download_path):
         # 创建文件夹
         os.mkdir(download_path)
